@@ -32,6 +32,7 @@ class Led8x7seg {
     void putMax7219Reg( byte reg, byte col);
   public:
     Led8x7seg(int DataPin, int LoadPin, int ClockPin);
+    void setBrightness(byte Brightness); //0~15 
     void ShowNum(int Pos, byte Num);
     void ShowInt(long Num);
     void ShowFloat(float Num);
